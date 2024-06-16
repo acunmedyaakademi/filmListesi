@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Listesi</title>
+  <link rel="stylesheet" href="assets/css/film.css">
+  <script src="assets/js/film.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="filmAdd">
+      <label for="name">Film Adı</label>
+      <input type="text" name="name">
+
+      <label for="summary">Film Konusu</label>
+      <textarea name="summary" rows="3"></textarea>
+
+      <label for="category">Film Kategorisi Seçiniz</label>
+      <select name="category" id="film">
+        <option disabled selected value="">Bir kategori seçiniz</option>
+        <option value="aksiyon">Aksiyon</option>
+        <option value="dram">Dram</option>
+        <option value="komedi">Komedi</option>
+        <option value="animasyon">Animasyon</option>
+        <option value="romantik">Romantik</option>
+      </select>
+
+      <label for="rating">Film Puanı</label>
+      <input type="number" name="rating" step="0.1">
+
+      <label for="file">Film Görseli</label>
+      <input type="text" name="file">
+
+      <button type="submit" class="filmBtn">Film Seç</button>
+    </form>
+    <button class="clearLocal">Storage i temizle</button>
+    <button id="addData">Örnek filmler ekle</button>
+    <div class="filmList">
+      <h1>Aksiyon Filmi:</h1>
+      <div class="action"></div>
+      <h1>Dram Filmi:</h1>
+      <div class="adventure"></div>
+      <h1>Komedi Filmi:</h1>
+      <div class="comedy"></div>
+      <h1>Animasyon Filmi:</h1>
+      <div class="animation"></div>
+      <h1>Romantik Filmi:</h1>
+      <div class="romantic"></div>
+    </div>
+  </div>
+</body>
+
+</html>
